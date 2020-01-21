@@ -58,7 +58,7 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
 
-  newArray = []
+  newArray = [0]
   
   row_index = 0
   while row_index < src.count do
@@ -66,7 +66,7 @@ def total_even_pairs(src)
     while element_index < src[row_index].count do
       
       if (src[row_index][element_index] % 2) == 0 && (src[row_index][element_index+1] % 2) == 0
-        newArray += (src[row_index][element_index] + src[row_index][element_index+1])
+        newArray[0] += (src[row_index][element_index] + src[row_index][element_index+1])
       end
 
       element_index += 2
